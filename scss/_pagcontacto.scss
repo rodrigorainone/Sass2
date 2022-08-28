@@ -1,0 +1,112 @@
+/*   pagina  contacto */ 
+
+.formContenedor {
+    background-color:#C2E4EC;
+    text-align: center;
+       height: 550px;
+       padding-top: 15px;    
+       width: 500px;
+
+
+
+
+
+
+   }
+   .contactoTitulo,.preguntasTitulo , .nosotrosTitulo , .comoComprarTitulo{
+    margin-bottom: 15px;
+    margin-top: 30px;
+    text-align: center;
+    z-index: -1;
+
+   }
+
+
+
+.contactoNombre , .contactoCorreo {
+
+   padding-left: 15px;
+    display: flex;
+}
+
+.contactoNombre, .contactoCorreo{
+   input {
+      width: 300px;
+   }
+    
+}
+.contactoComentarios {
+
+   label{
+      padding-right: 360px;
+
+   }
+      
+
+
+}
+
+.contactoComentarios{
+
+   textarea {
+      width: 460px;
+      height: 270px;
+   }
+   
+   }
+.contactoNombre {
+   padding-top: 15px;
+}
+
+.contactoContenedor {
+
+
+       padding-top: 30px;
+       text-align: center;      
+       display: flex;
+       justify-content: center;
+       gap:50px;
+       flex-wrap: wrap;   
+       margin-bottom: 30px; 
+}
+
+.contactoContenedor{
+   p{
+      font-size: 30px; 
+   }
+       
+}
+
+.contenedorDatos{
+       background-image: url(../img/contacto1.jpg);
+    width: 500px;
+    height: 550px;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
+}
+.contenedorDatos{
+   i {
+      padding-bottom: 50px;
+    font-size: 30px;
+
+   }
+   
+}
+.contenedorDatos{
+
+   i{
+      &:hover {
+         color:#F7C4D5;
+      }
+   }   
+}
+
+.contenedorDatos{
+
+   a{
+      color:black;
+text-decoration: none;
+   }
+   
+}       

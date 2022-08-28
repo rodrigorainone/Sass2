@@ -1,0 +1,11 @@
+/*      iconos header     */
+.iconosHeader{
+    a{
+        text-decoration: none;
+        color:black;
+       }
+    & :hover {
+        color: map-get($mapa , HoverI );        
+    }     
+}
+

@@ -1,0 +1,294 @@
+@media (min-width:1px) and (max-width: 599px) {
+    
+   
+    
+  
+
+    /*         empieza header                    */
+    #conteinerHeader {
+        grid-area: header;
+        display: grid ;
+        grid-template: 
+            "promo" 40px   
+            "contenerInfoHeader" 70px;  
+                 
+    }
+    .promo {
+        grid-area:promo;
+        background-color: #C2E4EC;
+        text-align: center;
+        position: fixed;
+        left:0;
+        top:0;
+        height: 40px;
+        width: 100%;
+        font-weight: bold;
+        z-index: 5;
+    }
+    .contenerInfoHeader {
+        grid-area:contenerInfoHeader;
+        background-image: url(../img/fondo4.jpg);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        height: 70px;
+        position:fixed;
+        left: 0px;
+        top: 40px;            
+        z-index: 5;
+    }
+    .logoHeader {
+        display:none;
+    }
+                                                 /* menu mobile */
+    
+    nav {                                        
+        background-color: transparent;    
+    }
+
+
+
+    .logoHeaderMobile ,#menuNavPhone,.menuNavPhoneLabel{
+          display: block;
+     }
+    
+    .ulPrin{
+        background-color: #C2E4EC;              
+        list-style: none;                    
+        width: 100%; 
+        position:fixed;
+        left: -600px;    
+        top: 0;
+        transition: all 1s;  
+        padding-top:120px;
+        padding-left: 10px;
+        display:block;
+       li {
+        padding-bottom: 15px;
+        border-top: 1px solid silver;
+        padding-top: 10px;
+        font-weight: bolder;
+        z-index: 150;
+        &:hover {
+            transform:none;
+            transition:none;
+            box-shadow:none;
+           border-radius:none;
+            a {
+                color:white;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;   
+        }
+       }
+        
+    }
+    
+   
+
+    
+
+   
+    #menuNavPhone {
+        
+        display: none;
+        &:checked ~ .ulPrin{
+            left:0px;
+        }
+    }
+
+    
+    .menuNavPhoneLabel {
+        position: relative;
+        z-index: 150;
+        
+    }
+    
+   
+    .fa-bars ,.fa-envelope,.fa-instagram,.fa-whatsapp,.fa-facebook-f,.logoHeaderMobile{
+        font-size: 20px;
+    }
+    
+    .logoHeaderMobile {
+        a{
+            color:black;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 25px;  
+
+
+        }        
+        
+    }
+    
+
+    .fa-bars{
+
+        &:hover {
+            color:white;
+
+        }
+        
+    }
+
+    /* empieza el main del index */
+    .mainIndex {
+        gap: 30px;
+         }
+    .banner {
+       grid-area: banner;
+        margin-top: 10px;
+        z-index: 1;
+            
+        }
+    .categoriasFotos {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+
+    }
+
+    .titu {
+        padding-bottom: 20px;
+        z-index: -1;
+       }
+       .atencionEnvios {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 15px;
+       }
+       
+       .envio,.atencion{
+        display: none;
+       }
+
+         /* termina el main*/
+
+          /*     footer phone */
+
+    
+    .footerContenedorPhoneInfo{
+        text-align: center;
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;        
+    }
+
+    .footerContenedorPhoneInfo{
+        p {
+            padding-bottom: 5px;
+
+        }
+        
+    }
+    .colorPhone {
+        color: #F7C4D5;
+        font-weight: bold;
+    
+    }
+
+    #mostrarMenuAyudarte, #mostrarMenuNosotros ,#mostrarMenuInformar ,#mostrarMenuSeguinos,#mostrarMenuMedios{
+        display:none;
+    }
+   
+    .footerContenedorPhoneInfo{
+
+        label {
+            &:hover {
+                cursor:pointer;
+            }
+
+        }
+        
+    }
+
+    .ayudarteUl,.NosotrosUl,.InformarUl,.SeguinosUl, .MediosUl{
+
+        ul {
+            list-style: none;
+        display: flex;
+        flex-direction: column;      
+        padding-left: 0;
+        gap: 5px;
+        li {
+            color:white;    
+        text-align: left;
+           p{
+            font-size: 15px;
+            font-weight:lighter;
+
+           }
+
+        }
+
+        }
+
+        a{
+            color:white;
+            text-decoration: none;
+            &:hover {
+                color:#C2E4EC;
+               text-decoration: none;
+
+            }
+        }
+        
+    
+    }
+    
+
+    .ayudarFot,.nosotrosFot,.informarFot,.seguinosFot,.mediosFot{
+        text-align: left;   
+    }
+    
+    
+    
+    .ayudarteUl ,.NosotrosUl ,.InformarUl ,.SeguinosUl ,.MediosUl {
+        display: none;
+    }
+    #mostrarMenuAyudarte:checked ~ .ayudarteUl ,#mostrarMenuNosotros:checked ~ .NosotrosUl ,#mostrarMenuInformar:checked ~ .InformarUl ,#mostrarMenuSeguinos:checked ~ .SeguinosUl,#mostrarMenuMedios:checked ~ .MediosUl {
+        display: block;
+    }
+
+    
+    
+    .copyright {
+        margin-top: 30px;
+        font-size: 13px;
+        text-align: center;
+        
+    }
+    .pDesk{
+        display: none;
+    }
+    .iconosHeader {
+       
+        padding-left: 0px;
+        padding-top: 2px;
+    
+       }
+
+   
+    #mostrarMenuMedios,.mostrarMenuMediosMod ,#mostrarMenuSeguinos ,.mostrarMenuSeguinosMod,#mostrarMenuInformar,.mostrarMenuInformarMod,#mostrarMenuNosotros ,.mostrarMenuNosotrosMod,#mostrarMenuAyudarte,.mostrarMenuAyudarteMod {
+        display:block;
+}
+#mostrarMenuAyudarte, #mostrarMenuNosotros ,#mostrarMenuInformar ,#mostrarMenuSeguinos,#mostrarMenuMedios{
+    display:none;
+}
+   .comun{
+    display: block;
+}
+   .palitos {
+    display:none
+   }
+    }

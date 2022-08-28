@@ -1,0 +1,71 @@
+/*    nosotros   y preguntas frecuentes    y como comprar*/   
+
+.nosotrosContenedorInfo , .preguntasContenedorInfo , .comoComprarContenedorInfo{
+   
+    
+    
+    width: 70%;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    text-align: left;
+    
+    
+
+}
+
+
+.nosotrosContenedor   , .preguntasContenedor ,.comoComprarContenedor {
+    text-align: center;    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.preguntasContenedorInfo{
+    margin-top: 25px;
+}
+.nosotrosContenedorInfo,.preguntasContenedorInfo{
+
+    p { 
+    padding-top: 20px;    
+    padding-bottom: 20px;
+    }
+}
+
+.nosotrosContenedorInfo,.preguntasContenedorInfo{    
+    h2{
+    
+    background-color: #C2E4EC;
+    font-size: 28px;
+}
+}
+
+
+.comoComprarContenedorInfo{
+    ol{
+        li{
+            font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+        }
+
+    }
+}
+
+
+.comoComprarContenedorInfo{
+    p {
+        font-weight: bold;
+    padding-top:10px;
+
+    }
+   
+
+}
+
+.comoComprarContenedorInfo{
+    a{
+        color:#4ab7bb; 
+    }
+    
+}
